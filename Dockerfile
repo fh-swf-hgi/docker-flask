@@ -1,4 +1,3 @@
-$ cat Dockerfile
 FROM ubuntu:18.04
 MAINTAINER Heiner Giefers "giefers.heiner@fh-swf.de"
 
