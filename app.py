@@ -9,7 +9,7 @@ def hello():
 
 @app.route('/host')
 def hello():
-    return "Host " + str(socket.gethostname())
+    return "Host %s" % socket.gethostname()
 
 @app.route('/<name>')
 def hello_name(name):
