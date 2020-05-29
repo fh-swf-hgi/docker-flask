@@ -1,3 +1,4 @@
+import socket
 from flask import Flask
 app = Flask(__name__)
 
@@ -5,6 +6,10 @@ app = Flask(__name__)
 @app.route('/')
 def hello():
     return "Hello World! Version 1.0"
+
+@app.route('/host')
+def hello():
+    return "Host " + str(socket.gethostname())
 
 @app.route('/<name>')
 def hello_name(name):
