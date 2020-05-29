@@ -8,7 +8,7 @@ def hello():
     return "Hello World! Version 1.0"
 
 @app.route('/host')
-def hello():
+def hello_host():
     return "Host %s" % socket.gethostname()
 
 @app.route('/<name>')
