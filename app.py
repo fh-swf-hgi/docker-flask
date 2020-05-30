@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    return "Hello World! Version 1.0"
+    return "Hello World! Neue Version 2.0"
 
 @app.route('/host')
 def hello_host():
